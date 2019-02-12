@@ -74,7 +74,6 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
 
 with open("thoughts.txt") as f:
 	thoughts = f.readlines()
-data = {}
 
 def run():
   print('starting server...')
