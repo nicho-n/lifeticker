@@ -3,9 +3,6 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 
-# A web-based database with Python
-
-
 # HTTPRequestHandler class
 class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
 
@@ -41,7 +38,6 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
 
         return
 
-
     def do_PUT(self):
         #adds or updates an item to the database, using the path as the key.
         path = self.path[1:]
@@ -75,8 +71,6 @@ class testHTTPServer_RequestHandler(BaseHTTPRequestHandler):
             data.clear()
 
         return
-
-
 
 with open("thoughts.txt") as f:
 	thoughts = f.readlines()
